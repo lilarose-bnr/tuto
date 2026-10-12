@@ -7,7 +7,11 @@ from rich.console import Console
 
 
 def moyenne(valeurs):
-    # docstrings en markdown
+    s = 0
+    for element in valeurs :
+        s += element
+    return s/len(valeurs)
+
     """
     # Calcule la moyenne des valeurs.
 
